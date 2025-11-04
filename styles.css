@@ -17,9 +17,22 @@ body {
 header {
   background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
   color: white;
-  text-align: center;
   padding: 3rem 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-text {
+  text-align: center;
+  flex: 1;
 }
 
 header h1 {
@@ -31,6 +44,38 @@ header h1 {
 header p {
   font-size: 1.2rem;
   opacity: 0.9;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  backdrop-filter: blur(10px);
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 /* Main Navigation */
@@ -457,8 +502,134 @@ footer {
   margin-top: 2rem;
 }
 
+.secret-link {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.secret-link:hover {
+  opacity: 0.7;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+}
+
+body.dark-mode .main-nav {
+  background: #161b22;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .nav-link {
+  border-color: #64ffda;
+  color: #64ffda;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+  background: #64ffda;
+  color: #0a192f;
+}
+
+body.dark-mode section,
+body.dark-mode .about-section {
+  background: #1e293b;
+  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode h2 {
+  color: #64ffda;
+  border-bottom-color: #64ffda;
+}
+
+body.dark-mode h2::after {
+  background: #64ffda;
+}
+
+body.dark-mode h3 {
+  color: #cbd5e1;
+}
+
+body.dark-mode a {
+  color: #64ffda;
+}
+
+body.dark-mode a:hover {
+  color: #88ffe0;
+}
+
+body.dark-mode .education-item,
+body.dark-mode .work-item,
+body.dark-mode .project-item,
+body.dark-mode .service-item,
+body.dark-mode .skill-category,
+body.dark-mode .course-category,
+body.dark-mode .contact-info {
+  background: #0f172a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .highlight-card {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #e0e0e0;
+}
+
+body.dark-mode .contact-highlight {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f2a47 100%);
+  border-color: #64ffda;
+}
+
+body.dark-mode .award-item {
+  background: linear-gradient(135deg, #3d3d1f 0%, #2d2d15 100%);
+  color: #e0e0e0;
+}
+
+body.dark-mode .placeholder {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f2a47 100%);
+  border-color: #64ffda;
+  color: #e0e0e0;
+}
+
+body.dark-mode .project-placeholder,
+body.dark-mode .video-placeholder {
+  background: #0f172a;
+  color: #e0e0e0;
+}
+
+body.dark-mode footer {
+  background: #0d1117;
+}
+
+body.dark-mode .secret-link {
+  color: #e0e0e0;
+}
+
+body.dark-mode .secret-link:hover {
+  color: #64ffda;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .dark-mode-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
   header h1 {
     font-size: 2rem;
   }

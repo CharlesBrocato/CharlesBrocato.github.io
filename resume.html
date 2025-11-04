@@ -15,8 +15,15 @@
 </head>
 <body>
   <header>
-    <h1>Charles Brocato</h1>
-    <p>Computer Engineering Student | Embedded Systems | Software Developer</p>
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Charles Brocato</h1>
+        <p>Computer Engineering Student | Embedded Systems | Software Developer</p>
+      </div>
+      <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-icon">🌙</span>
+      </button>
+    </div>
   </header>
 
   <!-- Main Navigation -->
@@ -158,8 +165,10 @@
   </section>
 
   <footer>
-    <p>© 2025 Charles Brocato</p>
+    <p><a href="minesweeper.html" class="secret-link">© 2025 Charles Brocato</a></p>
   </footer>
+
+  <script src="darkmode.js"></script>
 </body>
 </html>
 
