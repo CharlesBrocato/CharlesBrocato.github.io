@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charles Brocato – Projects</title>
+  <link rel="stylesheet" href="styles.css" id="css-link" />
+  <script>
+    // Auto cache-buster for CSS
+    document.addEventListener('DOMContentLoaded', function() {
+      const cssLink = document.getElementById('css-link');
+      cssLink.href = 'styles.css?v=' + Date.now();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Charles Brocato</h1>
+    <p>Computer Engineering Student | Embedded Systems | Software Developer</p>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <a href="index.html" class="nav-link">About Me</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+  </nav>
+
+  <section id="projects-list">
+    <h2>Projects</h2>
+    
+    <div class="project-item">
+      <h3>Waveform Generator with Real-Time Clock & ADC Acquisition</h3>
+      <p><strong>School Project</strong></p>
+      <ul>
+        <li>Leveraged RTI interrupts for 24-hour clock display and UART interface for interactive control</li>
+        <li>Demonstrated proficiency in embedded systems timing, low-level hardware interfacing, and real-time data acquisition</li>
+        <li>Engineered and debugged using CodeWarrior and HCS12 assembly to produce sawtooth/triangle/square waveforms</li>
+        <li>Captured 2,048 ADC samples at 8 kHz with precise timer-driven interrupts</li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h3>RoadRadar</h3>
+      <p><strong>Personal Project</strong></p>
+      <p>Application that allows for visualization and reporting of road hazards using GPS locations and an interactable map powered by Bing Maps API. Developed with Python, Java, and the Django framework.</p>
+    </div>
+
+    <div class="project-item">
+      <h3>Karaoke Machine</h3>
+      <p><strong>School Project</strong></p>
+      <p>Device that allows control of volume, bass and treble with a four LED volume display. Features karaoke mode to eliminate vocals. Required Multisim, PCB design, and soldering.</p>
+    </div>
+
+    <div class="project-item">
+      <h3>Pipelined Processor</h3>
+      <p><strong>School Project</strong></p>
+      <p>32-bit, five-stage (IF, ID, EXE, MEM and WB) pipelined CPU with forwarding that can handle 20 MIPS instructions. Built using Verilog and MIPS instruction set on Xilinx and Vivado.</p>
+    </div>
+  </section>
+
+  <section id="final-project">
+    <h2>Final Project</h2>
+    <div class="placeholder">
+      <p><em>Space reserved for final project showcase. Coming soon!</em></p>
+      <div class="project-placeholder">
+        <h3>Project Title</h3>
+        <p>Project description and details will be added here upon completion.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="video-demos">
+    <h2>Video Demonstrations</h2>
+    <div class="placeholder">
+      <p><em>Space reserved for video demonstrations of projects and work. Coming soon!</em></p>
+      <div class="video-placeholder">
+        <h3>Demo Video 1</h3>
+        <p>Video demonstration will be embedded here.</p>
+      </div>
+      <div class="video-placeholder">
+        <h3>Demo Video 2</h3>
+        <p>Additional video demonstrations will be added here.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Charles Brocato</p>
+  </footer>
+</body>
+</html>
+
