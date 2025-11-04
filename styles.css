@@ -546,6 +546,19 @@ body.dark-mode .about-section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+body.dark-mode .elevator-pitch .lead,
+body.dark-mode .elevator-pitch p {
+  color: #e0e0e0;
+}
+
+body.dark-mode .project-item p {
+  color: #e0e0e0;
+}
+
+body.dark-mode .work-item p {
+  color: #e0e0e0;
+}
+
 body.dark-mode h2 {
   color: #64ffda;
   border-bottom-color: #64ffda;
